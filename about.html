@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleabout.css">
+    <title>About Us</title>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img src="fatimalogo.png" style="width:50%; height: 100px; outline-width: thin; padding:all;">
+
+        <div class="logo">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-youtube-square"></i>
+        </div>
+
+        <img src="naac.png"
+            style="width:30%; height: 80px; outline-width: thin; padding: 10px; float: right; position: relative; top: 30px; left: 60px;">
+
+    </div>
+
+    <div class="menu_bar">
+
+        <ul>
+            <li><a href="about.html" <i class="fa fa-home"></i>About</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Examinations</a></li>
+            <li><a href="#">IQAC</a></li>
+            <li><a href="#">NAAC</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+
+        <div id="slider">
+
+            <div id="box">
+                <img src="a.jpg">
+            </div>
+
+            <button class="prew" onclick="prewImage()"><i class="fa-solid fa-angle-left"></i>
+                < </button>
+                    <button class="next" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i> > </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var slider_content = document.getElementById('box');
+
+        // contain images in an array
+
+        var image = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'p', 'j', 'k', 'l', 'm', 'n', 'o', 'q', 'r', 's'];
+        var i = image.length;
+
+        // function for next slide
+
+        function nextImage() {
+            if (i < image.length) {
+                i = i + 1;
+            } else {
+                i = 1;
+            }
+            slider_content.innerHTML = "<img src=" + image[i - 1] + ".jpg>";
+        }
+
+        // function for prew slide
+
+        function prewImage() {
+            if (i < image.length + 1 && i > 1) {
+                i = i - 1;
+            } else {
+                i = image.length;
+            }
+            slider_content.innerHTML = "<img src=" + image[i - 1] + ".jpg>";
+        }
+
+        // script for auto image slider
+
+        setInterval(nextImage, 2000);
+
+    </script>
+
+    <div class="about-container">
+
+        <div class="about-container1">
+
+            <div class="aboutc1">
+
+                <div class="about-tag">
+                    <h4 style="text-align: center;">About Us</h4><br>
+                </div>
+
+                <div class="sac sac1">
+                    <a href="">Prelude</a>
+                </div>
+                <div class="sac sac2">
+                    <a href="">Spirituality of SJL</a>
+                </div>
+                <div class="sac sac3">
+                    <a href="">Founder</a>
+                </div>
+                <div class="sac sac4">
+                    <a href="">Vision, Mission & Motto</a>
+                </div>
+                <div class="sac sac5">
+                    <a href="">College Profile</a>
+                </div>
+                <div class=" sac sac6">
+                    <a href="">College History</a>
+                </div>
+                <div class="sac sac7">
+                    <a href="">Honours Confered & Awards</a>
+                </div>
+                <div class="sac sac8">
+                    <a href="">Pioneers</a>
+                </div>
+                <div class="sac sac9">
+                    <a href="">Eminent Visitors</a>
+                </div>
+                <div class="sac sac10">
+                    <a href="">College Site Map</a>
+                </div>
+                <div class="sac sac11">
+                    <a href="">Roll of Honour</a>
+                </div>
+                <div class="sac sac12">
+                    <a href="">Prayer</a>
+                </div>
+                <div class="sac sac13">
+                    <a href="">Emblem</a>
+                </div>
+
+            </div>
+
+            <div class="aboutc2">
+                <br>
+                <h3 style="padding-left: 10px;"><b> PRELUDE</b></h3>
+                <p>___________________________________________________________________________________</p>
+                <p style="text-align: justify;">Fatima College, Mary Land, Madurai is a Catholic minority Institution, established and run by the Sisters of St. Joseph's Society of Lyons. Today the sisters are present in 48 countries, responding to the signs of the times and the needs of the people. The Charism of the sisters of St. Joseph of Lyons is unioning Love expressed in greatest charity and deepest humility. In India, there is one Province in the south of India and a region in the North of india. The sisters are involved in Educational, Social action, Pastoral, Family apostolate ministers empowering the marginalized women and children.<br>
+                <br>Fatima College, affiliated to Madurai Kamaraj University, was the dream of sr.Rose Benedicte, the founder of the college, realized 68 years ago. With more than half a century of experience in the field of education, Fatima college has established. it has endeared itself to the people of Madurai by imparting value based holistic education to young women with the objection of giving preference to the rural and economically backward women and first generation learners.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="box-box3">
+
+        <div class="box5">
+
+            <div class="tag4">
+                <h4 style="text-align: left; padding: 10px;">Vision Statement</h4>
+            </div>
+
+            <br>
+            <h3 style="text-align: center;">WOMEN'S EMPOVERMENT THROUGH<br>EDUCATION</h3><br>
+            <p style="text-align: center;">Being contemplative, prophetic and women of communion for<br>
+                the LIFE of the world to empower young women through faith<br>
+                formulation and value-based education for society equality,<br>
+                harmony and care for our common home.
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.827818510927!2d78.09624381479378!3d9.948279792886627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58f98cfb84d%3A0x93017737fb55b321!2sFatima%20College!5e0!3m2!1sen!2sin!4v1657521443816!5m2!1sen!2sin"
+                width="400" height="300" style="border:2px solid white; border-radius: 5px;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="box6">
+
+            <div class="tag4">
+                <h4 style="text-align: left; padding: 10px;">Quick Links</h4>
+            </div>
+
+            <br>
+            <a href="https://fatimacollegemdu.org/about-us/">About Fatima<br>_______________<br></a><br>
+            <a href="https://fatimacollegemdu.org/college-history">History<br>_______________<br></a><br>
+            <a href="https://fatimacollegemdu.org/calendar-handbook/">Calendar & Handbook<br>_______________<br></a><br>
+            <a href="https://fatimacollegemdu.org/facilities/">Facilities<br>_______________<br></a><br>
+            <a href="">Annual Report<br>_______________<br></a><br>
+            <a href="https://fatimacollegemdu.org/admission-procedure">Admission
+                Procedure<br>_______________<br></a><br>
+            <a href="http://fatimacollegemdu.org/fms/feedbackform.php">Feedback Form for<br>Public and
+                Stakeholders<br>_______________</a>
+
+            <div class="box6-1">
+                <a href="https://fatimacollegemdu.org/courses-list">Programmes Offered<br>___________<br></a><br>
+                <a href="https://fatimacollegemdu.org/departments">Departments<br>____________<br></a><br>
+                <a href="https://fatimacollegemdu.org/training-placement-cell/">Placement<br>____________<br></a><br>
+                <a href="http://fatimacollegemdu.org/fms">Complaints on Caste<br>Discrimination<br>_____________</a><br>
+            </div>
+
+            <div class="box6-2">
+                <a href="http://fatimacollegemdu.org/fatima_online/">Online Courses<br>______________<br></a><br>
+                <a href="https://fatimacollegemdu.org/ufiles/Alumnae/">Alumnae<br>______________<br></a><br>
+                <a href="https://fatimacollegemdu.org/resources/">Resources<br>______________<br></a><br>
+                <a href="https://fatimacollegemdu.org/gallery/">Gallery<br>______________<br></a><br>
+                <a href="https://www.fatimacollegemdu.org/ufiles/RTI.pdf">RTI<br>______________<br></a><br>
+                <a href="https://fatimacollegemdu.org/contact-us/">Contact Us<br>______________<br></a><br>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu_bar2">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Administration</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Examinations</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <div class="footer" style="padding: 25px; overflow: hidden;">
+        <p style="text-align: center;color: black;"><br>2021 @ All Rights Reserved to Fatima College (Autonomous),
+            Madurai desiged and develope by Winways.<br>Site viewed from (18-02-2019)</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fatima College</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://use.fontawesome.com/ed11246972.js"></script>
+	<script src="https://kit.fontawesome.com/b7139889bf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+	<div class="header">
+
+		<img src="fatimalogo.png" style="width:50%; height: 100px; outline-width: thin; padding:all;">
+
+		<div class="logo">
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter-square"></i>
+			<i class="fa fa-linkedin-square"></i>
+			<i class="fa fa-user"></i>
+			<i class="fa fa-facebook-official"></i>
+			<i class="fa fa-youtube-square"></i>
+		</div>
+
+		<img src="naac.png"
+			style="width:30%; height: 80px; outline-width: thin; padding: 10px; float: right; position: relative; top: 30px; left: 60px;">
+
+	</div>
+
+	<div class="menu_bar">
+
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="administration.html">Administration</a></li>
+			<li><a href="academic.html">Academic</a></li>
+			<li><a href="admision.html">Admission</a></li>
+			<li><a href="library.html">Library</a></li>
+			<li><a href="examinations.html">Examinations</a></li>
+			<li><a href="iqac.html">IQAC</a></li>
+			<li><a href="naac.html">NAAC</a></li>
+			<li><a href="gallary.html">Gallary</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+	</div>
+
+	<div class="main">
+
+		<div id="slider">
+
+			<div id="box">
+				<img src="a.jpg">
+			</div>
+
+			<button class="prew" onclick="prewImage()"><i class="fa-solid fa-angle-left"></i></button>
+					<button class="next" onclick="nextImage()"><i class="fa-solid fa-angle-right"></i>
+					</button>
+
+		</div>
+
+	</div>
+
+	<script>
+
+		var slider_content = document.getElementById('box');
+
+		// contain images in an array
+
+		var image = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'p', 'j', 'k', 'l', 'm', 'n', 'o', 'q', 'r', 's'];
+		var i = image.length;
+
+		// function for next slide
+
+		function nextImage() {
+			if (i < image.length) {
+				i = i + 1;
+			} else {
+				i = 1;
+			}
+			slider_content.innerHTML = "<img src=" + image[i - 1] + ".jpg>";
+		}
+
+		// function for prew slide
+
+		function prewImage() {
+			if (i < image.length + 1 && i > 1) {
+				i = i - 1;
+			} else {
+				i = image.length;
+			}
+			slider_content.innerHTML = "<img src=" + image[i - 1] + ".jpg>";
+		}
+
+		// script for auto image slider
+
+		setInterval(nextImage, 2000);
+
+	</script>
+	<div class="box-box1">
+
+		<div class="tag2">
+			<h3 style="text-align: center;">Principal's Desk</h3>
+		</div>
+
+		<div class="tag3">
+			<h3 style="text-align: center;">Founder</h3>
+		</div>
+
+		<div class="box1">
+			<img src="principal.jpg"
+				style="width: 40%; height:100px;border: 3px solid whitesmoke; margin: 5px; float: left;">
+			<p style="text-align: justify;">Dear Friends, <br>Welcome to Fatima College website. Fatima College is a
+				premier higher educational institute for womwn eficiently run and managed by the Sisters of St. Joseph's
+				of Lyon. The onward journey of Fatima from the first milestones to the present is a daring and
+				remarkable one.</p>
+			<a href="#" class="hero-btn1">Read More...</a><br><br><br>
+		</div>
+
+		<div class="box2">
+			<marquee behavior="scroll" direction="up" height="320px" scrollamount="12">
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;">Admission is open for Diploma in Fashion Designner and Garment Construction
+					(FDGC)
+					<span class="material-symbols-outlined">star</span>
+				</p>
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;"><b style="color: orange;">UG Admission 2022-2023: </b> Admission Portal
+					open from June 19, 2022
+					onwards.Apply Online for all UG Programmes.<span class="material-symbols-outlined">star</span></p>
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;"><b style="color: orange;">PG Admission 2022-2023: </b>Apply Online for all
+					PG Programmes.Admission Portal
+					open from June 01, 2022 onwards.<span class="material-symbols-outlined">star</span></p>
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;"><b style="color: orange;">Admission 2022: </b>Apply online for MBA/MCA
+					Programmes.Admission portal open
+					from May 02, 2022 onwards.<span class="material-symbols-outlined">star</span></p>
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;"><b style="color: orange;">Study Abroad Programme (SAP) </b>at Binary
+					Uniersity, Malaysia.<span class="material-symbols-outlined">star</span></p>
+				<p style="color: grey;">______________________________________</p>
+				<p style="text-align: left;">Unnat Bharat Abhiyan<span class="material-symbols-outlined">star</span></p>
+				<p style="color: grey;">______________________________________</p>
+				<img src="NCSSS-300x266.png" style="width:60%; height: 90px;">
+				<p style="color: grey;">______________________________________</p>
+			</marquee>
+		</div>
+
+		<div class="box3">
+			<img src="MOTHER_ROSE_s.png"
+				style="width: 40%; height:100px; border: 3px solid whitesmoke; margin: 5px;float: left;">
+			<p style="text-align: justify;">The setting of an educational institution of such magnificient dimensions,
+				had not been an idea of moment, but a long nurtured dream, cherished, kept alive and vibrant through
+				many years. A dream, a version, a reality that is in brief a picture of Fatima College.</p>
+			<a href="#" class="hero-btn2">Read More...</a><br><br><br>
+		</div>
+
+	</div>
+
+	<div class="box-box2">
+
+		<div class="box4">
+
+		</div>
+
+	</div>
+
+	<div class="box-box3">
+
+		<div class="box5">
+
+			<div class="tag4">
+				<h4 style="text-align: left; padding: 10px;">Vision Statement</h4>
+			</div>
+
+			<br>
+			<h3 style="text-align: center;">WOMEN'S EMPOVERMENT THROUGH<br>EDUCATION</h3><br>
+			<p style="text-align: center;">Being contemplative, prophetic and women of communion for<br>
+				the LIFE of the world to empower young women through faith<br>
+				formulation and value-based education for society equality,<br>
+				harmony and care for our common home.
+			</p>
+
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.827818510927!2d78.09624381479378!3d9.948279792886627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58f98cfb84d%3A0x93017737fb55b321!2sFatima%20College!5e0!3m2!1sen!2sin!4v1657521443816!5m2!1sen!2sin"
+				width="400" height="300" style="border:2px solid white; border-radius: 5px;" allowfullscreen=""
+				loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+		<div class="box6">
+
+			<div class="tag4">
+				<h4 style="text-align: left; padding: 10px;">Quick Links</h4>
+			</div>
+
+			<br>
+			<a href="https://fatimacollegemdu.org/about-us/">About Fatima<br>_______________<br></a><br>
+			<a href="https://fatimacollegemdu.org/college-history">History<br>_______________<br></a><br>
+			<a href="https://fatimacollegemdu.org/calendar-handbook/">Calendar & Handbook<br>_______________<br></a><br>
+			<a href="https://fatimacollegemdu.org/facilities/">Facilities<br>_______________<br></a><br>
+			<a href="">Annual Report<br>_______________<br></a><br>
+			<a href="https://fatimacollegemdu.org/admission-procedure">Admission
+				Procedure<br>_______________<br></a><br>
+			<a href="http://fatimacollegemdu.org/fms/feedbackform.php">Feedback Form for<br>Public and
+				Stakeholders<br>_______________</a>
+
+			<div class="box6-1">
+				<a href="https://fatimacollegemdu.org/courses-list">Programmes Offered<br>___________<br></a><br>
+				<a href="https://fatimacollegemdu.org/departments">Departments<br>____________<br></a><br>
+				<a href="https://fatimacollegemdu.org/training-placement-cell/">Placement<br>____________<br></a><br>
+				<a href="http://fatimacollegemdu.org/fms">Complaints on Caste<br>Discrimination<br>_____________</a><br>
+			</div>
+
+			<div class="box6-2">
+				<a href="http://fatimacollegemdu.org/fatima_online/">Online Courses<br>______________<br></a><br>
+				<a href="https://fatimacollegemdu.org/ufiles/Alumnae/">Alumnae<br>______________<br></a><br>
+				<a href="https://fatimacollegemdu.org/resources/">Resources<br>______________<br></a><br>
+				<a href="https://fatimacollegemdu.org/gallery/">Gallery<br>______________<br></a><br>
+				<a href="https://www.fatimacollegemdu.org/ufiles/RTI.pdf">RTI<br>______________<br></a><br>
+				<a href="https://fatimacollegemdu.org/contact-us/">Contact Us<br>______________<br></a><br>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="menu_bar2">
+
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="academic.html">Academic</a></li>
+			<li><a href="administration.html">Administration</a></li>
+			<li><a href="admission.html">Admission</a></li>
+			<li><a href="examination.html">Examinations</a></li>
+			<li><a href="library.html">Library</a></li>
+			<li><a href="gallary.html">Gallary</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+	</div>
+
+	<div class="footer" style="padding: 25px; overflow: hidden;">
+		<p style="text-align: center;color: black;"><br>2021 @ All Rights Reserved to Fatima College (Autonomous),
+			Madurai desiged and develope by Winways.<br>Site viewed from (18-02-2019)</p>
+	</div>
+
+</body>
+
+</html>
